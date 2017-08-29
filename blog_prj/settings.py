@@ -81,7 +81,7 @@ DATABASES = {
     'default': {'ENGINE': 'django.db.backends.mysql',
                 'NAME': 'blogdemo',
                 'USER': 'blog',
-                'PASSWORD': 'blog',
+                'PASSWORD': '123456',
                 'HOST': '127.0.0.1',
                 'PORT': '3306', }
 }
@@ -157,6 +157,11 @@ AUTH_PASSWORD_VALIDATORS = [
 #     }
 # }
 
+
+
+# self define user model
+
+AUTH_USER_MODEL = 'blog.User'
 # global settings
 
 MY_NAME = 'super Hoo'
